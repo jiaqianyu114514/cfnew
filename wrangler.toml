@@ -2,12 +2,9 @@ name = "cfnew"
 main = "_worker.js"
 compatibility_date = "2026-01-20"
 
-# KV 绑定：先在 Cloudflare 控制台创建一个 KV 命名空间，
-# 把它的 ID 填到下面，取消注释；没绑 KV 也能先部署，
-# 只是不能在线保存配置。
-# [[kv_namespaces]]
-# binding = "C"
-# id = "YOUR_KV_NAMESPACE_ID"
+[[kv_namespaces]]
+binding = "C"
+id = "e35b2616de4a4d628f7dc07c9ae869aa"
 
 [vars]
 # UUID 不要写在这里，也不要写进仓库。
